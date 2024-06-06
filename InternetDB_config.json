@@ -1,0 +1,45 @@
+{
+    "name": "InternetDB",
+    "description": "Fast IP lookups to get information about open ports",
+    "category": "Utilities",
+    "url": "https://www.example.com/api",
+    "auth": [
+        "apiKey"
+    ],
+    "context_path": "InternetDB",
+    "commands": [
+        {
+            "name": "info-ip-get",
+            "path": "{ip}",
+            "method": "get",
+            "description": "Info",
+            "arguments": [
+                {
+                    "name": "ip",
+                    "description": "",
+                    "required": true,
+                    "default": "",
+                    "in": "path",
+                    "ref": "",
+                    "type": "string",
+                    "options": null,
+                    "properties": {}
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "ip",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "context_path": "Host",
+            "root_object": "",
+            "headers": [],
+            "unique_key": ""
+        }
+    ],
+    "code_type": "python",
+    "code_subtype": "python3",
+    "docker_image": "demisto/python3:3.10.14.97100"
+}
